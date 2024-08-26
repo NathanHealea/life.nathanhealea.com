@@ -1,0 +1,1 @@
+export {default as encodedRedirect} from './encodedRedirect.utility';

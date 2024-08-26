@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "@/styles/globals.css";
-import { useSupabaseServer } from "@/services/supabase";
+import { createSupabaseServer } from "@/services/supabase";
 import { redirect } from "next/navigation";
 
 
@@ -15,7 +15,7 @@ export default async function RootLayout({
   children: React.ReactNode;
 }>) {
 
-  const supabase = useSupabaseServer();
+  const supabase = createSupabaseServer();
 
   const {
     data: { user },

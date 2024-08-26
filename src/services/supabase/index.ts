@@ -1,3 +1,3 @@
-export { default as useSupabaseClient } from "./client";
-export { default as useSupabaseServer } from "./server";
+export { default as createSupabaseClient } from "./client";
+export { default as createSupabaseServer } from "./server";
 export { updateSession } from "./middleware";
